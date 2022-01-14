@@ -1,0 +1,197 @@
+:root {
+  --background-color: #f6f6f6;
+  --background: #000000;
+  --color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* Header */
+header {
+  background: var(--background);
+  color: var(--color);
+  display: flex;
+  justify-content: space-around;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 10vh;
+  width: 100vw;
+}
+
+.header-container,
+.unorder-right,
+.unorder-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.unorder-right .logo {
+  font-size: 1.4rem;
+  padding-right: 1.2rem;
+}
+
+.unorder-right .list-hover-right {
+  padding: 0.4rem 0.6rem;
+}
+
+.unorder-right {
+  padding-left: 5rem;
+}
+
+.unorder-left .list-hover-left {
+  padding: 0.4rem 0.9rem;
+}
+
+.list-hover-right:hover,
+.list-hover-left:hover {
+  background: #686868;
+  border-radius: 15px;
+}
+
+.fa-globe,
+.fa-border-none,
+.fa-user {
+  padding-right: 0.35rem;
+}
+
+.fa-chevron-down {
+  padding-left: 0.25rem;
+}
+
+.cl-white a {
+  background: #f6f6f6;
+  color: #000000;
+  border-radius: 1.1rem;
+  padding: 0.55rem 1.3rem;
+  margin-left: 0.16rem;
+}
+
+.cl-white a:hover {
+  filter: brightness(90%);
+}
+
+/* dropdown-container */
+.dropdown-right {
+  position: relative;
+}
+
+.dropdown-right-container {
+  background: #f6f6f6;
+  box-shadow: 0rem 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.3rem;
+  display: none;
+  min-width: 12rem;
+  margin-top: 5px;
+  position: absolute;
+  padding-bottom: 0.4rem;
+  z-index: 3;
+}
+
+.dropdown-right-container a {
+  color: #545454;
+  display: block;
+  padding: 0.55rem 0;
+  padding-left: 0.9rem;
+}
+
+.dropdown-right-container a:hover {
+  background: #eeeeee;
+}
+
+.dropdown-right:hover .dropdown-right-container {
+  display: block;
+  margin-top: 15px;
+}
+
+/* dropdown left */
+.dropdown-left {
+  position: relative;
+}
+
+.dropdown-left-container {
+  background: #f6f6f6;
+  box-shadow: 0rem 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+  display: none;
+  right: 20%;
+  min-width: 15rem;
+  margin-top: 0.3rem;
+  max-height: 45vh;
+  position: absolute;
+  padding-bottom: 0.4rem;
+  overflow-x: scroll;
+  z-index: 3;
+}
+
+.dropdown-left-container a {
+  color: #545454;
+  display: block;
+  padding: 0.55rem 0;
+  padding-left: 0.9rem;
+}
+
+.dropdown-left-container a:hover {
+  background: #eeeeee;
+}
+
+.dropdown-left:hover .dropdown-left-container {
+  display: block;
+  margin-top: 15px;
+}
+
+.dropdown-left-container a {
+  padding: 1.1rem 1.2rem;
+}
+
+.dropdown-left-container i {
+  padding-right: 0.7rem;
+}
+
+.show {
+  display: none;
+}
+
+/* if the contact is larger than the maximum width, it will automatically charge */
+@media screen and (max-width: 980px) {
+  header {
+    font-size: 1rem;
+    max-width: 100%;
+    height: 15vh;
+  }
+
+  .list-hover-right,
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    margin: 1rem;
+  }
+
+  .fa-user {
+    margin: 0.3rem;
+  }
+
+  .cl-white {
+    padding: 0.3rem 0.44rem;
+  }
+}
