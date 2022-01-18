@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* li */
 li {
   list-style-type: none;
 }
@@ -37,6 +37,7 @@ header {
   height: 10vh;
   width: 100vw;
 }
+
 /* header-container/ unorder-right / unorder-left */
 .header-container,
 .unorder-right,
@@ -45,7 +46,7 @@ header {
   flex: 1;
   align-items: center;
 }
-
+/* unorder-right / logo / list-hover-right*/
 .unorder-right .logo {
   font-size: 1.4rem;
   padding-right: 1.2rem;
@@ -91,7 +92,7 @@ header {
   filter: brightness(90%);
 }
 
-/* dropdown-container */
+/* dropdown-container / dropdown-right-container */
 .dropdown-right {
   position: relative;
 }
@@ -125,7 +126,7 @@ header {
   display: block;
 }
 
-/* dropdown left */
+/* dropdown left / dropdown-left-container*/
 .dropdown-left {
   position: relative;
 }
@@ -172,8 +173,9 @@ header {
   display: none;
 }
 
-/* if the contact is larger than the maximum width, it will automatically charge */
-@media screen and (max-width: 980px) {
+/* @ media for the header container */
+@media screen and (max-width: 600px) {
+  /* header */
   header {
     font-size: 1rem;
     max-width: 100%;
@@ -198,3 +200,5 @@ header {
     padding: 0.3rem 0.44rem;
   }
 }
+
+/* good Day, to the inspector and mentor, my plan was to make the styles sheet and html more explicit, into small component but it looks like i don't have more time for that now im so sorry */

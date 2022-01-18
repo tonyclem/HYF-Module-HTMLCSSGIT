@@ -188,3 +188,32 @@
 .learn {
   padding-top: 3rem;
 }
+
+/* safetyWith-care */
+.safetyWith-care {
+  display: flex;
+  padding: 1rem 5rem;
+}
+
+.driver {
+  width: 600px;
+  height: 300px;
+}
+
+.wheel {
+  padding: 1rem 0;
+}
+
+.driver-container {
+  margin: 1rem 0;
+}
+
+.driver-container p {
+  padding-top: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.requirement {
+  padding: 5rem;
+}
