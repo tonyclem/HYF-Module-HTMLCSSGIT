@@ -73,13 +73,32 @@
 }
 /* options-intro span*/
 .options-intro span {
-  border-bottom: 1px #ccc solid;
+  border-bottom: 0.5px #ccc solid;
   margin: 1.5rem 3rem;
   padding: 7px 0;
 }
 
-.options-intro span:hover {
-  border-bottom: 1px #000000 solid;
+/* horizontal / line */
+.horizontal {
+  position: relative;
+}
+.horizontal::after {
+  background: #000;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+}
+
+.line::after {
+  transform: scale(0, 1);
+  transform-origin: 0 100%;
+  transition: 0.2s ease;
+}
+.line:hover::after {
+  transform: scale(1, 1);
 }
 
 /* Business */
@@ -152,15 +171,7 @@
 .about-container-span span {
   border-bottom: 1px #ccc solid;
   padding: 7px 0;
-}
-
-.span-container span:hover,
-.about-container-span span:hover {
-  border-bottom: 1px #000000 solid;
-}
-
-.span-container .span-left {
-  padding-left: 14px;
+  margin-left: 9px;
 }
 
 /* information-container */
@@ -204,6 +215,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1.3rem;
 }
 
 .discover {
@@ -253,4 +265,116 @@
 }
 .register-here .fa-arrow-right {
   font-size: 35px;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: #ffffff;
+  width: 100%;
+}
+
+.footer-container {
+  padding: 4rem 10rem;
+}
+
+.footer-container h2 {
+  padding: 2rem 0;
+}
+
+.help {
+  padding: 1.2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  padding: 1.4rem 0;
+}
+
+.footer-flexbox {
+  padding-right: 4rem;
+  width: 540px;
+}
+
+.footer-flexbox p {
+  padding-top: 1.5rem;
+}
+
+.footer-flexbox p:hover {
+  filter: brightness(50%);
+}
+
+/* Social-container */
+.social-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+.social .fa-facebook-square,
+.social .fa-twitter,
+.social .fa-youtube,
+.social .fa-linkedin-in,
+.socail .fa-instagram {
+  padding: 0.5rem;
+}
+
+/* icon */
+.icon a {
+  padding: 0.5rem;
+}
+
+.icon a:hover {
+  background: #333333;
+}
+
+.social button {
+  text-decoration: none;
+  background: #000000;
+  color: #f1f1f1;
+  border: none;
+  padding: 10px;
+}
+
+.social-btn {
+  padding-left: 2rem;
+  width: 410px;
+}
+
+.social-btn i {
+  padding: 0 9px;
+}
+
+.social-btn button:hover {
+  background: #333333;
+}
+
+.social img {
+  width: 130px;
+  height: 60px;
+  margin-right: 0.5rem;
+}
+
+.social-img {
+  padding-right: 1rem;
+}
+
+/* Uber-clone */
+.uber-clone {
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.pg {
+  display: flex;
+}
+
+.pg p {
+  padding: 0 1.1rem;
+}
+.pg p:hover {
+  filter: brightness(50%);
 }
