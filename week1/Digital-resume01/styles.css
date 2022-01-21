@@ -14,11 +14,12 @@ li {
 }
 
 body {
-  background: rgb(40, 39, 39);
+  background: #000;
   width: 100vw;
   height: 100vh;
 }
 
+/* main */
 main {
   border-radius: 3px;
   border: 1;
@@ -32,7 +33,7 @@ main {
 
 /* First Container */
 #first-container {
-  background: rgb(226, 226, 226);
+  background: #ccc;
 }
 
 /* Header */
@@ -41,7 +42,7 @@ header {
   background: rgb(214, 214, 214);
   text-align: center;
 }
-
+/* header img */
 header img {
   border-radius: 50%;
   background: green;
@@ -50,6 +51,7 @@ header img {
   height: 8.8em;
 }
 
+/* header h1 */
 header h1 {
   padding: 0.19em;
 }
@@ -59,11 +61,13 @@ header h1 {
   padding: 1em;
 }
 
+/* info li */
 .info li {
   padding: 0.4em;
   font-size: 1.3em;
 }
 
+/* info i */
 .info i {
   padding-right: 0.8em;
 }
@@ -81,19 +85,23 @@ header h1 {
   padding-bottom: 0.6em;
 }
 
+/* skill */
 .skill i {
   padding-right: 0.6em;
   font-size: 1.6em;
 }
+/* skill-info */
 .skill-info {
   padding: 0.2em;
 }
 
+/* skill-info li */
 .skill-info li {
   font-size: 1.1em;
   padding: 0.3em 0;
 }
 
+/* skill-info i */
 .skill-info i {
   padding-right: 1em;
 }
@@ -110,58 +118,76 @@ header h1 {
   grid-template-columns: 150px 120px;
 }
 
+/* lng */
 .lng {
   font-size: 1em;
   padding: 0.3em;
 }
 
+/* orangec */
 .orangec {
   color: orange;
 }
+/* blackc */
 .blackC {
   color: black;
 }
 /* First Container End */
 
 /* Second Container */
-#second-container {
+.second-container {
   background: #f3f3f3;
   padding: 1em 0.5em;
 }
+
+/* artice */
 article {
   padding-left: 0em;
 }
+
+/* artice p */
 article p {
   font-size: 1.1em;
   padding: 0.3em 1em;
 }
 
+/* second */
 .second {
   margin-bottom: 0.7em;
 }
+
+/* second p */
 .second p {
   padding-bottom: 0.9em;
 }
+
+/* about */
 .about {
   padding: 0.3em;
 }
+
+/* about */
 .about i {
   font-size: 1.4em;
   padding-right: 1em;
 }
 
+/* education */
 .education {
   padding: 0.6em;
   padding-top: 1.3em;
 }
+/* education span h4 */
 .education span h4 {
   font-size: 1.07em;
 }
 
+/* Eduaction i */
 .education i {
   padding-right: 0.5em;
 }
 
+/* education p */
 .education p {
   padding-bottom: 1em;
   padding-left: 2.2em;
