@@ -1,0 +1,12 @@
+.section2-img {
+  background-image: url("../assets/Uber-NYC-bkg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.section2-content {
+  width: 100%;
+  height: 100%;
+}
