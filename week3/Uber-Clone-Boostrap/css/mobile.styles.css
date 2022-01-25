@@ -4,4 +4,9 @@
   .team .screen-size .horizontal-container {
     margin-bottom: 20px;
   }
+
+  .section5 .team .col-md-5 {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 }

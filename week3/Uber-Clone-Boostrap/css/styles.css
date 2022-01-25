@@ -44,3 +44,21 @@
 .line:hover::after {
   transform: scale(1, 1);
 }
+
+/* Section5 */
+.section5 {
+  background: #f2f2f2;
+  margin-top: 2rem;
+}
+
+.backgroundColor {
+}
+
+.img-logo {
+  width: 145px;
+  height: 150px;
+}
+
+/* .section5 .team > div:nth-child(2n + 2) {
+  margin-left: 4rem;
+} */
