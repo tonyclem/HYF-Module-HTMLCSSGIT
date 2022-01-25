@@ -1,6 +1,10 @@
 /* Screen */
 
 @media only screen and (max-width: 400px) {
+  :root {
+    font-size: 16px;
+  }
+
   .team .screen-size .horizontal-container {
     margin-bottom: 20px;
   }
@@ -8,5 +12,28 @@
   .section5 .team .col-md-5 {
     justify-content: space-between;
     margin-top: 20px;
+  }
+
+  .section6 .team .col-md-5 > span {
+    margin-top: 2rem;
+  }
+}
+
+/* Min-width: 500px */
+@media only screen and (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .team .screen-size .horizontal-container {
+    margin-bottom: 20px;
+  }
+
+  .section5 .team .col-md-5 {
+    margin-top: 20px;
+  }
+
+  .section6 .team .col-md-5 > span {
+    margin-top: 2rem;
   }
 }
