@@ -10,3 +10,37 @@
   width: 100%;
   height: 100%;
 }
+
+/* horizontal / line */
+/* horizontal / line */
+.horizontal-container span p {
+  margin-bottom: 1.5px;
+}
+
+.horizontal-container span:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.horizontal {
+  position: relative;
+  border-bottom: #ccc 1px solid;
+}
+
+.horizontal::after {
+  background: #000;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+}
+
+.line::after {
+  transform: scale(0, 1);
+  transform-origin: 0 100%;
+  transition: 0.2s ease;
+}
+.line:hover::after {
+  transform: scale(1, 1);
+}

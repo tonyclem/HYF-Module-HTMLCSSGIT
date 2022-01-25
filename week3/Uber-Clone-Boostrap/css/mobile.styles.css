@@ -1,0 +1,7 @@
+/* Screen */
+
+@media only screen and (max-width: 400px) {
+  .team .screen-size .horizontal-container {
+    margin-bottom: 20px;
+  }
+}
