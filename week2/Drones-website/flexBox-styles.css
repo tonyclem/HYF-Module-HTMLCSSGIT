@@ -75,11 +75,6 @@ li {
   padding: 0 10px;
 }
 
-/* flexbox-list:first-child */
-.flexbox-list:first-child {
-  flex-grow: 2;
-}
-
 /* Flexbox-item / nth-child */
 .flexbox-item:nth-child(1),
 .flexbox-item:nth-child(5),
