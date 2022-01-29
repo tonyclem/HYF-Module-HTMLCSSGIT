@@ -31,7 +31,6 @@ li {
 .flexbox-list {
   background: #fff;
   display: flex;
-  align-items: stretch;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 8px;
@@ -46,6 +45,14 @@ li {
   text-align: center;
   width: 310px;
   height: 370px;
+}
+
+/* flexbox-list li:first-child */
+.flexbox-list li:first-child {
+  flex: 0 0 45%;
+}
+.flexbox-list li:nth-child(2) {
+  flex: 0 0 45%;
 }
 
 /* flex-item h3 */
@@ -86,15 +93,17 @@ li {
   background: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .flexbox-section {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
   }
+}
 
-  /* .flexbox-list {
-    margin: 0 10%;
-  } */
+@media screen and (max-width: 1200px) {
+  .flexbox-section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
